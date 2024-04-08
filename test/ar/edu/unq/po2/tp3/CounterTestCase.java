@@ -34,7 +34,7 @@ public class CounterTestCase {
 	
 	public void testOddNumbers() {
 		int amount = counter.cantDePares();
-		assertEquals(amount, 1);
+		assertEquals(amount, 1); 
 	}
 	
 	public void testMultiplos() {
