@@ -38,7 +38,7 @@ public class Counter {
 			if (numero % n == 0) {
 				cantDeMul++;
 			}
-		}
+		} 
 		return cantDeMul;
 	}
 }
