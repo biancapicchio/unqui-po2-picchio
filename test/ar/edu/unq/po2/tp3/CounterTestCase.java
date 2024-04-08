@@ -42,4 +42,4 @@ public class CounterTestCase {
 		assertEquals(amount, 1);
 		
 	}
-}
+} 
