@@ -1,6 +1,7 @@
 package ar.edu.unq.po2.tp3;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -42,4 +43,20 @@ public class CounterTestCase {
 		assertEquals(amount, 1);
 		
 	}
-} 
+	
+	public void testNumeroConMayorCantidadDePares() {
+		counter.addNumber(123);
+		counter.addNumber(222);
+		counter.addNumber(6);
+		counter.addNumber(10);
+		int amount = counter.numConMayorCantDeParesDe();
+		assertEquals(amount, 222);
+	}
+	
+	public void testMayorMultiploEntre(){
+		int amount1 = counter.mayorMultiploEntre_y_(9, 3);
+		int amount2 = counter.mayorMultiploEntre_y_(8, 0);
+		assertEquals(amount1, 999);
+		assertEquals(amount2, 0);
+	}
+}
