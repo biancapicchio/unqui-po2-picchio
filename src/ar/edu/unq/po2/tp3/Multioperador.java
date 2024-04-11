@@ -19,14 +19,15 @@ public class Multioperador {
 		return suma;
 	}
 	
-	/*public int resta () {
+	public int resta () {
 		int resta = numeros.getFirst();
-		List<Integer> numerosSinPrimero = numeros.remove(0);
+		numeros.remove(0);
+		List<Integer> numerosSinPrimero = numeros;
 		for (int numero : numerosSinPrimero) {
 			resta -= numero;
 		}
 		return resta;
-	}*/
+	}
 	
 	public int multiplicacion () {
 		int multiplicacion = 1;
