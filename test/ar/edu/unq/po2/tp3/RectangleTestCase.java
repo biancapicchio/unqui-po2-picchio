@@ -37,5 +37,4 @@ class RectangleTestCase {
 		assertEquals(rectangle.getBase(), 10);
 		assertEquals(rectangle.getAltura(), 8);
 	}
-
 }
