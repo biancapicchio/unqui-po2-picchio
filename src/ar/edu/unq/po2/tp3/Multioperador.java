@@ -11,7 +11,7 @@ public class Multioperador {
 		numeros.add(n);
 	}
 	
-	public int suma () {
+	public int suma () { 
 		int suma = 0;
 		for (int numero : numeros) {
 			suma += numero;
@@ -32,7 +32,7 @@ public class Multioperador {
 	public int multiplicacion () {
 		int multiplicacion = 1;
 		for (int numero : numeros) {
-			multiplicacion = numero;
+			multiplicacion *= numero;
 		}
 		return multiplicacion;
 	}

@@ -21,19 +21,22 @@ private Point point;
 		assertEquals(5, point.getX());
 		assertEquals(5, point.getY());
 	}
-	
+	 
+	@Test
 	public void testMoverA() {
 		point.moverA(6, 8);
 		assertEquals(6, point.getX());
 		assertEquals(8, point.getY());
 	}
 	
+	@Test
 	public void testCreatePoint() {
 		Point unPunto = new Point();
 		assertEquals(0, unPunto.getX());
 		assertEquals(0, unPunto.getY());
 	}
 	
+	@Test
 	public void testCreatePointAt() {
 		Point unPunto = new Point(2, 1);
 		assertEquals(2, unPunto.getX());

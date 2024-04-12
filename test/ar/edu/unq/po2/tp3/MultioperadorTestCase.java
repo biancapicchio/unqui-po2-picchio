@@ -20,17 +20,19 @@ class MultioperadorTestCase {
 			multioperador.addNumber(4);
 		}
 
-	@Test
+	@Test 
 	public void testSuma() {
 		int amount = multioperador.suma();
 		assertEquals(amount, 14);
 	}
 	
+	@Test
 	public void testResta() {
 		int amount = multioperador.resta();
 		assertEquals(amount, -12);
 	}
 	
+	@Test
 	public void testMultiplicacion() {
 		int amount = multioperador.multiplicacion();
 		assertEquals(amount, 60);

@@ -18,7 +18,7 @@ public class Counter {
 				cantDePares++;
 			}
 		}
-		return cantDePares;
+		return cantDePares; 
 	}
 	
 	public int cantDeImpares() {
@@ -46,18 +46,21 @@ public class Counter {
 		int numConMayorCantDePares = 0;
 		int mayorCantDePares = 0;
 		for (Integer numero : numeros) {
-			if (this.cantParesDe(numero) >= mayorCantDePares)
+			if (this.cantParesDe(numero) >= mayorCantDePares) {
 				numConMayorCantDePares = numero;
 				mayorCantDePares = this.cantParesDe(numero);
+			}
 		}
 		return numConMayorCantDePares;
 	}
 
 	private int cantParesDe (Integer n) {
 		int cantDePares = 0;
-		while (n != 0) {
+		while (n > 0) {
 			if (n % 2 == 0) {
 				cantDePares++;
+				n /= 10;
+			} else {
 				n /= 10;
 			}
 		}
@@ -66,7 +69,7 @@ public class Counter {
 	
 	public int mayorMultiploEntre_y_ (int x, int y) {
 		for (int i = 1000; i > 0; i--) {
-			if (i / x == 0 && i / y == 0) {
+			if (i % x == 0 && i % y == 0) {
 				return i;
 			}
 		}

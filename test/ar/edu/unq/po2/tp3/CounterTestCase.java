@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
 public class CounterTestCase {
 	
 	private Counter counter;
-	
-@BeforeEach
+	 
+	@BeforeEach
 	public void setUp() throws Exception {
 		counter = new Counter();
 
@@ -33,17 +33,20 @@ public class CounterTestCase {
 		assertEquals(amount, 9);
 	}
 	
+	@Test
 	public void testOddNumbers() {
 		int amount = counter.cantDePares();
 		assertEquals(amount, 1); 
 	}
-	
+	 
+	@Test
 	public void testMultiplos() {
 		int amount = counter.cantDeMultiplosDe(2);
 		assertEquals(amount, 1);
 		
 	}
 	
+	@Test
 	public void testNumeroConMayorCantidadDePares() {
 		counter.addNumber(123);
 		counter.addNumber(222);
@@ -53,10 +56,11 @@ public class CounterTestCase {
 		assertEquals(amount, 222);
 	}
 	
+	@Test
 	public void testMayorMultiploEntre(){
 		int amount1 = counter.mayorMultiploEntre_y_(9, 3);
-		int amount2 = counter.mayorMultiploEntre_y_(8, 0);
+		int amount2 = counter.mayorMultiploEntre_y_(8, 1);
 		assertEquals(amount1, 999);
-		assertEquals(amount2, 0);
+		assertEquals(amount2, 1000);
 	}
 }
