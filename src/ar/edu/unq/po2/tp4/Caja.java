@@ -15,7 +15,7 @@ public class Caja {
 	public void registrarProductos(Cliente cliente) {
 		int montoAPagar = 0;
 		for(Producto producto : productos) {
-			montoAPagar += producto.precio();
+			montoAPagar += producto.getPrecio();
 			producto.sacarDeStock();
 		}
 		cliente.setMontoAPagar(montoAPagar);
